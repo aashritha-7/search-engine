@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Link to the Project
 
-https://bit.ly/3wK2UO3
+https://search-e.vercel.app/
 
 ## Getting Started
 
