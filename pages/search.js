@@ -8,11 +8,11 @@ function search({ results }) {
 
     const router = useRouter();
 
-    const API_KEY = 'AIzaSyBTMzu9JUWP97LgZLg7zR_9OVwuhaDyZZc';
+    const API_KEY = 'AIzaSyCuDP--5SRRvDAJUDyl2nWdgRtT9tzucFk';
 
     // CONTEXT KEY - https://cse.google.com/cse/create/new
 
-    const CONTEXT_KEY = '9bc67f2b2ef848ce2';
+    const CONTEXT_KEY = '4f8603e9d79751957';
 
     console.log(results);
 
@@ -37,6 +37,7 @@ export async function getServerSideProps(context) {
     const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyBTMzu9JUWP97LgZLg7zR_9OVwuhaDyZZc&cx=9bc67f2b2ef848ce2&q=${context.query.term}&start=${startIndex}`
     ).then((response) => response.json());
 
+        //Returning the results to client  after SERVER SIDE RENDERING
     return {
         props: {
             results: data
